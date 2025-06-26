@@ -1,0 +1,23 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type RecursoBook {
+  id: Int!
+  title: String!
+  author: String!
+}
+
+type Query {
+  recursoBooks: [RecursoBook!]!
+  recursoBook(id: Int!): RecursoBook
+}
+
+type Mutation {
+  createRecursoBook(createRecursoBookInput: CreateRecursoBookInput!): RecursoBook!
+}
+
+input CreateRecursoBookInput {
+  title: String!
+  author: String!
+}
